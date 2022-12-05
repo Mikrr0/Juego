@@ -224,6 +224,11 @@ def main():
     while x == 0:
         IngresaDatos()
         golpe()
+        while True:
+            try:
+                x  = int(input("\n   ¿Desea comenzar otra partida?\nPRESIONE [0] PARA SEGUIR JUGANDO\npresione cualquier nùmero para salir\n"))
+                break
+            except ValueError:
+                print("    Presione un número\n    Intente nuevamente")
 
-        x = int(input("\n¿Desea comenzar otra partida?\n  PRESIONE [0] PARA SEGUIR JUGANDO\npresione cualquier tecla para salir"))
 main()
